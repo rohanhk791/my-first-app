@@ -1,11 +1,14 @@
-import photo1 from './assets';
+import logo from './assets/photo1.jpg';
 import './App.css';
+import ClassComponent from './component/classcomponent';
+import FunctionalComponent from './component/functionalcomponent';
+import Nestedcomponent from './component/nestedcomponent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={photo1.jpg} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <h1>
           React nodejs
         </h1>
@@ -19,6 +22,9 @@ function App() {
         >
           Learn React
         </a>
+        <ClassComponent/>
+        <FunctionalComponent/>
+        <Nestedcomponent/>
       </header>
     </div>
   );
