@@ -3,7 +3,9 @@ import './App.css';
 import ClassComponent from './component/classcomponent';
 import FunctionalComponent from './component/functionalcomponent';
 import Nestedcomponent from './component/nestedcomponent';
-import Details from './Data/details.json';
+import det from './Data/details.json';
+
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,7 @@ function App() {
         <ClassComponent/>
         <FunctionalComponent/>
         <Nestedcomponent/>
+        <Display/>
       </header>
     </div>
   );
@@ -32,14 +35,14 @@ function App() {
 
 function Display() 
 {
-  const Display = details.map(
+  const Display = det.map(
     (records) => {
       return (
         <tr>
           <td>{records.eid}</td>
           <td>{records.Name}</td>
           <td>{records.project}</td>
-          <td>{records.period_days}</td>
+          <td>{records.period_of_days}</td>
         </tr>
       )
     }
@@ -53,7 +56,7 @@ function Display()
             <th>EId</th>
             <th>Name</th>
             <th>Project</th>
-            <th>period_days</th>
+            <th>period_of_days</th>
           </tr>
         </thead>
         <tbody class= "table table-light">

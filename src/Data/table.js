@@ -1,16 +1,16 @@
 import React from "react"
-import details from './Data/details.json';
+import dept1 from './details.json';
 
 function display()
 {
-  const disp =detail.map(
+  const disp =det1.map(
     (records) => {
      return (
        <tr>
          <td>{records.eid}</td>
          <td>{records.Name}</td>
          <td>{records.project}</td>
-         <td>{records.period_days}</td>
+         <td>{records.period_of_days}</td>
        </tr>
 
       )
@@ -24,7 +24,7 @@ return(
         <th>EId</th>
         <th>User Name</th>
         <th>Project</th>
-        <th>Period_days</th>
+        <th>Period_of_days</th>
       </tr>
     </thead>
     <tbody>
