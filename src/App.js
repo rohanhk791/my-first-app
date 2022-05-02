@@ -27,8 +27,9 @@ function App() {
         <ClassComponent/>
         <FunctionalComponent/>
         <Nestedcomponent/>
+        </header>
         <Display/>
-      </header>
+    
     </div>
   );
 }
