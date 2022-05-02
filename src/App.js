@@ -3,7 +3,7 @@ import './App.css';
 import ClassComponent from './component/classcomponent';
 import FunctionalComponent from './component/functionalcomponent';
 import Nestedcomponent from './component/nestedcomponent';
-
+import Details from './Data/details.json';
 function App() {
   return (
     <div className="App">
@@ -28,6 +28,40 @@ function App() {
       </header>
     </div>
   );
+}
+
+function Display() 
+{
+  const Display = details.map(
+    (records) => {
+      return (
+        <tr>
+          <td>{records.eid}</td>
+          <td>{records.Name}</td>
+          <td>{records.project}</td>
+          <td>{records.period_days}</td>
+        </tr>
+      )
+    }
+  )
+
+  return (
+    <div>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>EId</th>
+            <th>Name</th>
+            <th>Project</th>
+            <th>period_days</th>
+          </tr>
+        </thead>
+        <tbody class= "table table-light">
+          {Display}
+        </tbody>
+      </table>
+    </div>
+  )
 }
 
 export default App;
