@@ -4,6 +4,7 @@ import ClassComponent from './component/classcomponent';
 import FunctionalComponent from './component/functionalcomponent';
 import Nestedcomponent from './component/nestedcomponent';
 import det from './Data/details.json';
+import {Class} from 'react-bootstrap';
 
 
 function App() {
